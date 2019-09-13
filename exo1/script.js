@@ -49,7 +49,9 @@ GridGenerator.prototype.renderGrid = function() {
   }
   elBody.appendChild(elTable);
 }
-
+GridGenerator.prototype.randomNumber = function(min,max) {
+    
+}
 /**
  * randomColor
  * @return {string} color
