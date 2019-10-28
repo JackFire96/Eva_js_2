@@ -14,7 +14,9 @@ DrawBar.prototype.progressBar = function() {
     container.style.height = '50px';
     bar.style.width = '0%';
     bar.style.height = '50px';
-    bar.style.background = 'red'
+    bar.style.background = 'red';
+    bar.style.textAlign = 'center';
+    bar.style.fontSize = '20px';
     document.querySelector('body').appendChild(container);
     container.appendChild(bar);
     function frame() {
