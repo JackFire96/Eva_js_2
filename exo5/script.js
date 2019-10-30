@@ -1,4 +1,4 @@
-'use strict';7
+'use strict';
 
 var submit = document.querySelector('.submit');
 function checkInput() {
@@ -6,7 +6,6 @@ function checkInput() {
     var prenom = document.querySelector('#prenom');
     var email = document.querySelector('#email');
     var mdp = document.querySelector('#mdp');
-    var success = document.querySelector('#success');
     var nameRegexp = new RegExp(/([.,;:?!§@&"'()])/);
     var emailRegexp = new RegExp(/(\w+\@\w+.com|\w+\@\w+.fr)/);
     var mdpRegexp = new RegExp(/?=.*([a-zA-ZÀ-ÿ0-9@#!*/$\\%?&]){6,}/);
