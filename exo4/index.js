@@ -1,10 +1,10 @@
-var wm = document.getElementById("svg2");
+var map = document.getElementById("svg2");
 
-wm.addEventListener("load", function() {
+map.addEventListener("load", function() {
 	
 	var caption = document.querySelector("#map-caption"); 
     var selectedCountries = document.querySelector("path");
-    
+    console.log(selectedCountries);
 	for (var i = 0, length = selectedCountries.length; i < length; i++) {
 		 
 		// add mouseover event listener on all selected countries
@@ -14,7 +14,8 @@ wm.addEventListener("load", function() {
             caption.innerHTML = elemId; //get the id to write the name of the country
             this.style.fill = "blue";
             console.log('log hover');
-		});		 
+        });
+        console.log(selectedCountries);
 		
 		// add mouseout event listener on all selected countries
 		selectedCountries[i].addEventListener("mouseout", function() {
